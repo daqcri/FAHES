@@ -30,7 +30,7 @@
         <p>FAHES is a system for detecting DMVs from two angles: DMVs as detectable outliers and as detectable inliers. For DMVs as outliers, we propose a syntactic outlier detection module for categorical data, and a density-based outlier detection module for numerical values. For DMVs as inliers, we propose a method that detects DMVs which follow either missing-completely-at-random or missing-at-random models.</p>
 
         <h2>Why do I need FAHES: </h2>
-        <p>detecting DMVs is hard, since they can be either human (carefully) faked values, or system generated values. Obviously, there is no <i>global representation</i> for DMVs. Different persons and organizations will use different representations for DMVs. Consequently, it is impossible to define general rules for all data sets. DMVs in one table could represent legitimate values in other tables. In real applications, practitioners may have to write many customized rules to detect DMVs per table, which is a daunting task.</p>
+        <p>Detecting DMVs is hard, since they can be either human (carefully) faked values, or system generated values. Obviously, there is no <i>global representation</i> for DMVs. Different persons and organizations will use different representations for DMVs. Consequently, it is impossible to define general rules for all data sets. DMVs in one table could represent legitimate values in other tables. In real applications, practitioners may have to write many customized rules to detect DMVs per table, which is a daunting task.</p>
 
         <h2>Detectable DMVs are: </h2>
         <ul>
@@ -47,7 +47,7 @@
         <ul>
           <li><b>Syntactic outlier detection module</b> to capture those DMVs that are syntactic outliers or contain special patterns such as strings with repeated substrings (e.g. abcabcabc) and numbers with incrementally increasing/decreasing digits (e.g. 1234567)</li>
           <li><b>Numerical outlier detection module</b> that best suits FAHES. This module detects DMVs that are far from the rest of the values in the Euclidean space</li>
-          <li><b> DMVs as MCAR/MAR detectfor:</b> for detecting DMVs as inliers, we devise an algorithm for detecting DMVs that follow missing-completely-at-random (MCAR) or missing-at-random (MAR) models</li>
+          <li><b> DMVs as MCAR/MAR detector:</b> for detecting DMVs as inliers, we devise an algorithm for detecting DMVs that follow missing-completely-at-random (MCAR) or missing-at-random (MAR) models</li>
         </ul>
 
         
